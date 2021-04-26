@@ -25,6 +25,7 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.0.0
-
+    - name: Install dependencies
+      run: bundle install
     - name: Run tests
       run: ruby calculator_test.rb
