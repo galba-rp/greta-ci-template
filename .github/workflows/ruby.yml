@@ -10,8 +10,6 @@ name: Ruby
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   test:
@@ -25,7 +23,9 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.0.0
-    - name: Install dependencies
-      run: bundle install
+        bundler: 2.2.16
+        bundler-cache: true
     - name: Run tests
-      run: calculator_test.rb
+      run: bundle exec ruby calculator_test.rb
+    - name: Rubocop
+      run: rubocop
