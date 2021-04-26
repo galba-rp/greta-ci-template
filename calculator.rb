@@ -73,7 +73,7 @@ class Calculator::View
       form method: "POST", action: "/" do
         input name: "raw_amount", value: raw_amount, placeholder: "Prix"
         button type: "submit" do
-          "Conf"
+          "Valider"
         end
       end
     end
