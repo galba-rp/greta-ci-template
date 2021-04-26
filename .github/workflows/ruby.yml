@@ -28,4 +28,4 @@ jobs:
     - name: Install dependencies
       run: bundle install
     - name: Run tests
-      run: ruby../calculator_test.rb
+      run: calculator_test.rb
