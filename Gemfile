@@ -3,6 +3,7 @@ source "https://rubygems.org"
 gem "puma"    # web application server
 gem "sinatra" # micro web-framework
 gem "markaby" # templating library
+gem "rubocop"
 
 group :test do
   gem "minitest"  # Test framework
@@ -11,3 +12,5 @@ group :test do
 end
 
 ruby "3.0.0"
+
+
