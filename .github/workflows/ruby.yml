@@ -27,3 +27,5 @@ jobs:
         bundler-cache: true
     - name: Run tests
       run: bundle exec ruby calculator_test.rb
+    - name: Rubocop
+      run: rubocop
