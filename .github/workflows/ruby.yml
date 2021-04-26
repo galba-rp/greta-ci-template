@@ -26,4 +26,4 @@ jobs:
         bundler: 2.2.16
         bundler-cache: true
     - name: Run tests
-      run: bundler exec calculator_test.rb
+      run: bundle exec calculator_test.rb
